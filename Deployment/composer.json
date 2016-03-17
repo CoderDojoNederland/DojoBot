@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "deployphp/recipes": "~3.0"
+    }
+}
