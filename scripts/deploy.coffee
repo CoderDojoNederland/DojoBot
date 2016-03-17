@@ -1,5 +1,7 @@
 # Description:
 #   Deploy CoderDojo Website
+# Commands:
+#   dojobot deploy - Deploy the CoderDojo website to production
 
 module.exports = (robot) ->
 
