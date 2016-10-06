@@ -1,7 +1,7 @@
 <?php
 
 // All Deployer recipes are based on `recipe/common.php`.
-require 'recipe/symfony.php';
+require 'recipe/symfony3.php';
 
 // Define a server for deployment.
 // Let's name it "prod" and use port 22.
@@ -13,7 +13,7 @@ server('prod', 'coderdojo.nl', 22)
 
 task('set_cache_rights', function(){
     cd('/site/current');
-    run('sudo chmod 777 -R app/cache');
+    run('sudo chmod 777 -R var/cache');
 });
 
 before('deploy', 'set_cache_rights');
